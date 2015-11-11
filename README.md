@@ -34,7 +34,6 @@ Stats on Class Hierarchies in the Benchmark
 The following table shows various parameters of the class hierarchies in each benchmark, after their adoption to C++: 
 
 Library | Language    | Classes| Paths| Height| Roots| Leafs| Both| P.av |P.mx|Ch.av|Ch.mx|                   
-        | OVERALLS    |   15246| 63963|     17|   298| 10877|  199| 1.11 |  16| 3.89|  323| Overalls          
 --------|-------------|--------|------|-------|------|------|-----|------|----|-----|-----|-------------------
     DG2 | Smalltalk   |     534|   534|     11|     2|   381|    1| 1    |   1| 3.48|   59| digitalk2         
     DG3 | Smalltalk   |    1356|  1356|     13|     2|   923|    1| 1    |   1| 3.13|  142| digitalk3         
@@ -56,6 +55,7 @@ Library | Language    | Classes| Paths| Height| Roots| Leafs| Both| P.av |P.mx|C
     VW1 | Smalltalk   |     387|   387|      9|     1|   246|    0| 1    |   1| 2.74|   87| visualworks1      
     VW2 | Smalltalk   |    1956|  1956|     15|     1|  1332|    0| 1    |   1| 3.13|  181| visualworks2      
         |             |       6|     9|      4|     2|     1|    0| 1.50 |   2| 1.20|    2| vtbl              
+        | OVERALLS    |   15246| 63963|     17|   298| 10877|  199| 1.11 |  16| 3.89|  323| Overalls          
 
 The number of paths represents the number of distinct inheritance paths from the 
 classes in the hierarchy to the roots of the hierarchy. This number reflects the number of possible subobjects in the 
