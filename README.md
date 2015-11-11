@@ -8,7 +8,7 @@ This project contains a large, real-world class hierarchy benchmark with 15246
 classes and 63963 different derivation paths. [The benchmark](cou) was previously
 used in the literature to study efficiency of type inclusion testing and dispatching 
 techniques [1,2,3,4] and was maintained by Karel Driesen (see his original 
-[readme](cou/readme)).
+[readme](cou/README)).
  
 While working on [Mach7](http://bit.ly/Mach7) [5,6] we've tried to find this benchmark 
 for our own experiments, but the original links were broken. Eventually we could 
@@ -22,7 +22,7 @@ COU to C++ Translator
 
 While all the hierarchies were man-made, not all class hierarchies originated 
 from C++, and sometimes used certain kinds of inheritance, not allowed in C++.
-This is why during conversion to C++, COU parser prunes inaccessible base classes 
+This is why during conversion to C++, [COU parser](parser) prunes inaccessible base classes 
 (direct base class that is already an indirect base class) when used with repeated 
 inheritance in order to satisfy semantic requirements of C++. It maintains 
 the same number of virtual functions present in each class as well as the number 
@@ -33,7 +33,7 @@ Stats on Class Hierarchies in the Benchmark
 
 The following table shows various parameters of the class hierarchies in each benchmark, after their adoption to C++: 
 
-Library | Language    | Classes| Paths| Height| Roots| Leafs| Both| P.av |P.mx|Ch.av|Ch.mx|                   
+Library | Language    | Classes| Paths| Height| Roots| Leafs| Both| Parents (avg) | Parents (max) | Children (avg) | Children (max) |                   
 --------|-------------|--------|------|-------|------|------|-----|------|----|-----|-----|-------------------
     DG2 | Smalltalk   |     534|   534|     11|     2|   381|    1| 1    |   1| 3.48|   59| digitalk2         
     DG3 | Smalltalk   |    1356|  1356|     13|     2|   923|    1| 1    |   1| 3.13|  142| digitalk3         
