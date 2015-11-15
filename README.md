@@ -1,9 +1,6 @@
 Class Hierarchies Benchmark
 ===========================
 
-Introduction
-------------
-
 This project contains a large, real-world class hierarchy benchmark with 15246
 classes and 63963 different derivation paths. [The benchmark](cou) was previously
 used in the literature to study efficiency of type inclusion testing and dispatching 
