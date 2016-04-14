@@ -51,10 +51,10 @@ SOURCES = $(shell ls *.cpp) cou.tab.cpp cou.yy.cpp
 #CXX     = g++
 LIBS     = -lstdc++
 INCLUDES = -I../..
-ifneq (,$(BOOST))
-	INCLUDES += -I$(BOOST)
+ifneq (,$(BOOST_ROOT))
+	INCLUDES += -I$(BOOST_ROOT)
 endif
-CXXFLAGS = $(INCLUDES) -g -Wall -Wextra -pedantic -v -O2 -DNDEBUG -DXTL_MESSAGE_ENABLED=0 -std=gnu++0x
+CXXFLAGS = $(INCLUDES) -g -Wall -Wextra -pedantic -v -O2 -DNDEBUG -DXTL_MESSAGE_ENABLED=0 -std=c++0x
 ifneq (,$(findstring g++,$(CXX)))
 	CXXFLAGS += -Wno-vla -ftrack-macro-expansion=4 -fdiagnostics-show-option -D__NO_INLINE__ 
 endif

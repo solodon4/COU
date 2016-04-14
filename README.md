@@ -1,4 +1,4 @@
-Class Hierarchies Benchmark
+Class Hierarchies Benchmark  [![Build Status: Linux, OSX](https://travis-ci.org/solodon4/COU.svg?branch=master)](https://travis-ci.org/solodon4/COU) 
 ===========================
 
 This project contains a large, real-world class hierarchy benchmark with 15246
