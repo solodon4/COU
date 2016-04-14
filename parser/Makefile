@@ -56,13 +56,15 @@ ifneq (,$(BOOST_ROOT))
 endif
 CXXFLAGS = $(INCLUDES) -g -Wall -Wextra -pedantic -v -O2 -DNDEBUG -DXTL_MESSAGE_ENABLED=0 -std=c++0x
 ifneq (,$(findstring g++,$(CXX)))
-	CXXFLAGS += -Wno-vla -ftrack-macro-expansion=4 -fdiagnostics-show-option -D__NO_INLINE__ 
+	CXXFLAGS += -Wno-vla -fdiagnostics-show-option
+# Workaround for MinGW bug: -D__NO_INLINE__
+# Not supported by clang on Travis CI machines: -ftrack-macro-expansion=4
 endif
 ifneq (,$(findstring clang,$(CXX)))
 	CXXFLAGS += -fmacro-backtrace-limit=0 -ftemplate-backtrace-limit=0 -Wno-vla-extension -Wno-nested-anon-types -Wno-gnu-zero-variadic-macro-arguments -Wno-gnu-anonymous-struct
 endif
 
-LIBFLAGS = $(LIBS)
+LIBFLAGS =
 AR       = ar
 
 .SUFFIXES: .cpp .o
@@ -86,7 +88,7 @@ all: $(TARGETS)
 %.exe: $(OBJECTS)
 	@echo --------------------------------------------------------------------------------
 	@echo Linking $@ ...
-	$(CXX) -o $@ *.o $(LIBFLAGS)
+	$(CXX) -o $@ $(LIBFLAGS) $< $(LIBS)
 	@echo ================================================================================
 	@echo Done building $@
 	@echo ================================================================================
