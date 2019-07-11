@@ -30,30 +30,29 @@ Stats on Class Hierarchies in the Benchmark
 
 The following table shows various parameters of the class hierarchies in each benchmark, after their adoption to C++: 
 
-Library | Language    | Classes| Paths| Height| Roots| Leafs| Both| Prnt(avg) | Prnt(max) | Chld(avg) | Chld(max) | Name              |
---------|-------------|--------|------|-------|------|------|-----|-----------|-----------|-----------|-----------|-------------------|
-    DG2 | Smalltalk   |     534|   534|     11|     2|   381|    1| 1         |          1|       3.48|         59| digitalk2         |
-    DG3 | Smalltalk   |    1356|  1356|     13|     2|   923|    1| 1         |          1|       3.13|        142| digitalk3         |
-    ET+ | C++         |     370|   370|      8|    87|   289|   79| 1         |          1|       3.49|         51| et++              |
-    GEO | Eiffel      |    1318| 13798|     14|     1|   732|    0| 1.89      |         16|       4.75|        323| geode             |
-    JAV | Java        |     604|   792|     10|     1|   445|    0| 1.08      |          3|       4.64|        210| java              |
-    LOV | Eiffel      |     436|  1846|     10|     1|   218|    0| 1.72      |         10|       3.55|         78| lov-object-editor |
-    NXT | Objective-C |     310|   310|      7|     2|   246|    1| 1         |          1|       4.81|        142| nextstep          |
-    SLF | Self        |    1801| 36420|     17|    51|  1134|    0| 1.05      |          9|       2.76|        232| self              |
-    UNI | C++         |     613|   633|      9|   147|   481|  117| 1.02      |          2|       3.61|         39| unidraw           |
-        |             |      51|    51|      7|     1|    29|    0| 1.00      |          1|       2.27|          5| v1-collection     |
-        |             |      18|    18|      5|     1|    11|    0| 1.00      |          1|       2.43|          5| v1-magnitude      |
-        |             |     383|   383|      9|     1|   244|    0| 1.00      |          1|       2.75|         86| v1-object-nometa  |
-        |             |       9|     9|      5|     1|     4|    0| 1.00      |          1|       1.60|          2| v1-set            |
-        |             |      16|    16|      7|     1|     7|    0| 1.00      |          1|       1.67|          2| v1-stream         |
-        |             |      53|    53|      8|     1|    31|    0| 1.00      |          1|       2.36|          7| v1-visualcomponent|
-    VA2a| Smalltalk   |    3241|  3241|     14|     1|  2582|    0| 1         |          1|       4.92|        249| visualage2.all    |
-    VA2k| Smalltalk   |    2320|  2320|     13|     1|  1868|    0| 1         |          1|       5.13|        240| visualage2.kern   |
-    VW1 | Smalltalk   |     387|   387|      9|     1|   246|    0| 1         |          1|       2.74|         87| visualworks1      |
-    VW2 | Smalltalk   |    1956|  1956|     15|     1|  1332|    0| 1         |          1|       3.13|        181| visualworks2      |
-        |             |       6|     9|      4|     2|     1|    0| 1.50      |          2|       1.20|          2| vtbl              |
---------|-------------|--------|------|-------|------|------|-----|-----------|-----------|-----------|-----------|-------------------|
-        | OVERALLS    |   15246| 63963|     17|   298| 10877|  199| 1.11      |         16|       3.89|        323| Overalls          |
+|Library | Language    | Classes| Paths| Height| Roots| Leafs| Both| Prnt(avg) | Prnt(max) | Chld(avg) | Chld(max) | Name              |
+|:-------|:------------|-------:|-----:|------:|-----:|-----:|----:|:----------|----------:|----------:|----------:|:------------------|
+|    DG2 | Smalltalk   |     534|   534|     11|     2|   381|    1| 1         |          1|       3.48|         59| digitalk2         |
+|    DG3 | Smalltalk   |    1356|  1356|     13|     2|   923|    1| 1         |          1|       3.13|        142| digitalk3         |
+|    ET+ | C++         |     370|   370|      8|    87|   289|   79| 1         |          1|       3.49|         51| et++              |
+|    GEO | Eiffel      |    1318| 13798|     14|     1|   732|    0| 1.89      |         16|       4.75|        323| geode             |
+|    JAV | Java        |     604|   792|     10|     1|   445|    0| 1.08      |          3|       4.64|        210| java              |
+|    LOV | Eiffel      |     436|  1846|     10|     1|   218|    0| 1.72      |         10|       3.55|         78| lov-object-editor |
+|    NXT | Objective-C |     310|   310|      7|     2|   246|    1| 1         |          1|       4.81|        142| nextstep          |
+|    SLF | Self        |    1801| 36420|     17|    51|  1134|    0| 1.05      |          9|       2.76|        232| self              |
+|    UNI | C++         |     613|   633|      9|   147|   481|  117| 1.02      |          2|       3.61|         39| unidraw           |
+|        |             |      51|    51|      7|     1|    29|    0| 1.00      |          1|       2.27|          5| v1-collection     |
+|        |             |      18|    18|      5|     1|    11|    0| 1.00      |          1|       2.43|          5| v1-magnitude      |
+|        |             |     383|   383|      9|     1|   244|    0| 1.00      |          1|       2.75|         86| v1-object-nometa  |
+|        |             |       9|     9|      5|     1|     4|    0| 1.00      |          1|       1.60|          2| v1-set            |
+|        |             |      16|    16|      7|     1|     7|    0| 1.00      |          1|       1.67|          2| v1-stream         |
+|        |             |      53|    53|      8|     1|    31|    0| 1.00      |          1|       2.36|          7| v1-visualcomponent|
+|    VA2a| Smalltalk   |    3241|  3241|     14|     1|  2582|    0| 1         |          1|       4.92|        249| visualage2.all    |
+|    VA2k| Smalltalk   |    2320|  2320|     13|     1|  1868|    0| 1         |          1|       5.13|        240| visualage2.kern   |
+|    VW1 | Smalltalk   |     387|   387|      9|     1|   246|    0| 1         |          1|       2.74|         87| visualworks1      |
+|    VW2 | Smalltalk   |    1956|  1956|     15|     1|  1332|    0| 1         |          1|       3.13|        181| visualworks2      |
+|        |             |       6|     9|      4|     2|     1|    0| 1.50      |          2|       1.20|          2| vtbl              |
+|        | **OVERALLS**|   15246| 63963|     17|   298| 10877|  199| 1.11      |         16|       3.89|        323| Overalls          |
 
 The number of paths represents the number of distinct inheritance paths from the 
 classes in the hierarchy to the roots of the hierarchy. This number reflects the number of possible subobjects in the 
