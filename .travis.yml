@@ -12,11 +12,11 @@ addons:
     - ubuntu-toolchain-r-test
     - boost-latest
     packages:
-    - g++-6
+    - g++-7
     - libboost-dev
 before_install: cd parser
 install:
-  - if [[ "$CXX" == g++ ]]; then export CXX="g++-6"; fi
+  - if [ [ "$TRAVIS_OS_NAME" = "osx" ] && [ "$CXX" == "g++" ] ]; then export CXX="g++-4.9"; fi
 before_script:
     - uname -a
     - printenv
